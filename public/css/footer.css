@@ -1,0 +1,41 @@
+footer section.articulos{
+    text-align: center;
+    max-width: 400px;
+    margin: none;
+    padding-bottom: 20px;
+}
+
+.icono-footer{
+    color: #1259c3;
+    font-size: 2rem;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+.icono-footer:hover{
+    color: salmon;
+}
+
+footer{
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+}
+
+.titulo-footer{
+    font-size: 1rem;
+    color: #666;
+    font-weight: bold;
+}
+
+@media (min-width: 769px) {
+    .contenedor-items-footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

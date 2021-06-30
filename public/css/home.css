@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto';
+    background-color:#ebebeb;
+}
+
+.img-contenedor{
+    width: 100%;
+}
+
+.img-banner{
+    width: 100vw;
+    margin-top: 142px;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    font-style: bold;
+    color: #666;
+}
+
+.descuento{
+    font-size: 1rem;
+    color: #39b54a;
+    flex-grow: 0.7;
+    text-align: left;
+}
+
+.descripcion{
+    font-size: 1rem;
+    color: white;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.precio{
+    font-size: 1.125rem;
+    flex-grow: 0.3;
+}
+
+main section article i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    animation: giro 500ms linear 1 normal;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotateY(150deg);
+    }
+}
+
+.texto-cuerpo{
+    font-size: 0.75rem;
+    color: #666;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+article{
+    margin-bottom: 10px;
+    background-color: white;
+    transition: all 450ms;
+}
+
+article div h5{
+    display: none;
+}
+
+.contenedor-atributos{
+    border-top: solid 0.0625rem #ebebeb;
+    padding: 0.9375rem;
+    position: relative;
+    height: 30%;
+}
+
+.contenedor-precio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
+    flex-direction: row; 
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.contenedor-productos h2{
+    flex-grow: 1;
+}
+
+.contenedor-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+    width: 90vw;
+}
+
+@media (min-width: 361px) {
+    article div h5{
+        display: block;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .item{
+        width: 44vw;
+    }
+    .descripcion:hover{
+        color: #666;
+    }
+    .img-banner {
+        margin-top: 110px;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .item{
+        width: 22vw;
+    }
+    .descripcion:hover{
+        color: #666;
+    }
+    .img-banner {
+        margin-top: 160px;
+    }
+}

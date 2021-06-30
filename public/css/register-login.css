@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto';
+    background-color:#ebebeb;
+}
+
+.contenedor-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 182px 0px 40px 0px;
+}
+
+.contenedor-form-main {
+    width: 80%;
+    max-width: 500px;
+}
+
+.contenedor-item {
+    padding: 15px;
+}
+
+.caja {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.titulo-radiobuttom {
+    padding: 0px 15px 0px 15px;
+    font-size: 10px;
+}
+
+.titulo-intereses {
+    padding-left: 15px;
+    font-size: 10px;
+}
+
+.titulo-item {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.input-foto {
+    font-size: 10px;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.intereses-item {
+    padding-bottom: 15px;
+}
+
+.boton-formulario {
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton-login {
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    height: 40px;
+    width: 100%;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+.boton-login {
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px) {
+    .titulo-radiobuttom, .titulo-item, .titulo-intereses{
+        font-size: 14px;
+    }
+
+    .input-foto{
+        font-size: 12px;
+    }
+
+    .contenedor-register{
+        margin-top: 150px;
+    }
+    
+}
+
+@media (min-width: 769px) {
+
+    .contenedor-register{
+        margin-top: 200px;
+    }
+    
+}
